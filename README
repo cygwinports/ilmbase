@@ -1,0 +1,137 @@
+ilmbase
+------------------------------------------
+General utility libraries used by OpenEXR:
+
+* Half is a class that encapsulates our 16-bit floating-point format.
+* IlmThread is a thread abstraction library for use with OpenEXR
+and other software packages.  It currently supports pthreads and
+Windows threads.
+* Imath implements 2D and 3D vectors, 3x3 and 4x4 matrices, quaternions
+and other useful 2D and 3D math functions.
+* Iex is an exception-handling library.
+
+Runtime requirements:
+  cygwin-1.5.24-2
+
+Build requirements:
+  cygwin-1.5.24-2
+  autoconf2.5-2.61-1
+  automake1.9-1.9.6-2
+  binutils-20060817-1
+  cygport-0.3.5-1
+  gawk-3.1.5-4
+  gcc-core-3.4.4-3
+  gcc-g++-3.4.4-3
+  libtool1.5-1.5.23a-2
+  make-3.81-1
+  sed-4.1.5-2
+
+Canonical website:
+  http://www.openexr.com/
+
+Canonical download:
+  http://savannah.nongnu.org/download/openexr/
+
+-------------------------------------------
+
+Build instructions:
+  unpack ilmbase-1.0.0-X-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  cygport ./ilmbase-1.0.0-X.cygport all
+
+This will create:
+  /usr/src/ilmbase-1.0.0-X-src.tar.bz2
+  /usr/src/ilmbase-1.0.0-X.tar.bz2
+  /usr/src/libilmbase-devel-1.0.0-X.tar.bz2
+  /usr/src/libilmbase6-1.0.0-X.tar.bz2
+
+-------------------------------------------
+
+Files included in the binary packages:
+
+(ilmbase)
+  /usr/share/doc/Cygwin/ilmbase-1.0.0.README
+  /usr/share/doc/ilmbase-1.0.0/AUTHORS
+  /usr/share/doc/ilmbase-1.0.0/COPYING
+  /usr/share/doc/ilmbase-1.0.0/ChangeLog
+  /usr/share/doc/ilmbase-1.0.0/INSTALL
+  /usr/share/doc/ilmbase-1.0.0/LICENSE
+  /usr/share/doc/ilmbase-1.0.0/NEWS
+  /usr/share/doc/ilmbase-1.0.0/README
+
+(libilmbase6)
+  /usr/bin/cygHalf-6.dll
+  /usr/bin/cygIex-6.dll
+  /usr/bin/cygIlmThread-6.dll
+  /usr/bin/cygImath-6.dll
+
+(libilmbase-devel)
+  /usr/include/OpenEXR/Iex.h
+  /usr/include/OpenEXR/IexBaseExc.h
+  /usr/include/OpenEXR/IexErrnoExc.h
+  /usr/include/OpenEXR/IexMacros.h
+  /usr/include/OpenEXR/IexMathExc.h
+  /usr/include/OpenEXR/IexThrowErrnoExc.h
+  /usr/include/OpenEXR/IlmBaseConfig.h
+  /usr/include/OpenEXR/IlmThread.h
+  /usr/include/OpenEXR/IlmThreadMutex.h
+  /usr/include/OpenEXR/IlmThreadPool.h
+  /usr/include/OpenEXR/IlmThreadSemaphore.h
+  /usr/include/OpenEXR/ImathBox.h
+  /usr/include/OpenEXR/ImathBoxAlgo.h
+  /usr/include/OpenEXR/ImathColor.h
+  /usr/include/OpenEXR/ImathColorAlgo.h
+  /usr/include/OpenEXR/ImathEuler.h
+  /usr/include/OpenEXR/ImathExc.h
+  /usr/include/OpenEXR/ImathFrame.h
+  /usr/include/OpenEXR/ImathFrustum.h
+  /usr/include/OpenEXR/ImathFun.h
+  /usr/include/OpenEXR/ImathGL.h
+  /usr/include/OpenEXR/ImathGLU.h
+  /usr/include/OpenEXR/ImathHalfLimits.h
+  /usr/include/OpenEXR/ImathInt64.h
+  /usr/include/OpenEXR/ImathInterval.h
+  /usr/include/OpenEXR/ImathLimits.h
+  /usr/include/OpenEXR/ImathLine.h
+  /usr/include/OpenEXR/ImathLineAlgo.h
+  /usr/include/OpenEXR/ImathMath.h
+  /usr/include/OpenEXR/ImathMatrix.h
+  /usr/include/OpenEXR/ImathMatrixAlgo.h
+  /usr/include/OpenEXR/ImathPlane.h
+  /usr/include/OpenEXR/ImathPlatform.h
+  /usr/include/OpenEXR/ImathQuat.h
+  /usr/include/OpenEXR/ImathRandom.h
+  /usr/include/OpenEXR/ImathRoots.h
+  /usr/include/OpenEXR/ImathShear.h
+  /usr/include/OpenEXR/ImathSphere.h
+  /usr/include/OpenEXR/ImathVec.h
+  /usr/include/OpenEXR/ImathVecAlgo.h
+  /usr/include/OpenEXR/half.h
+  /usr/include/OpenEXR/halfFunction.h
+  /usr/include/OpenEXR/halfLimits.h
+  /usr/lib/libHalf.a
+  /usr/lib/libHalf.dll.a
+  /usr/lib/libHalf.la
+  /usr/lib/libIex.a
+  /usr/lib/libIex.dll.a
+  /usr/lib/libIex.la
+  /usr/lib/libIlmThread.a
+  /usr/lib/libIlmThread.dll.a
+  /usr/lib/libIlmThread.la
+  /usr/lib/libImath.a
+  /usr/lib/libImath.dll.a
+  /usr/lib/libImath.la
+  /usr/lib/pkgconfig/IlmBase.pc
+
+------------------
+
+Port Notes:
+
+----- version 1.0.0-1 -----
+Initial release for Cygwin (broken out upstream from OpenEXR).
+
+
+Cygwin port maintained by:
+http://cygwinports.dotsrc.org/
