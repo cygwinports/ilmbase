@@ -11,19 +11,20 @@ and other useful 2D and 3D math functions.
 * Iex is an exception-handling library.
 
 Runtime requirements:
-  cygwin-1.5.24-2
+  cygwin-1.7.0-48
+  libgcc1-4.3.2-2
+  libstdc++6-4.3.2-2
 
 Build requirements:
-  cygwin-1.5.24-2
-  autoconf2.5-2.61-1
-  automake1.9-1.9.6-2
-  binutils-20060817-1
-  cygport-0.3.6-1
-  gawk-3.1.5-4
-  gcc-core-3.4.4-3
-  gcc-g++-3.4.4-3
-  libtool1.5-1.5.23a-2
-  make-3.81-1
+  autoconf2.5-2.63-10
+  automake1.9-1.9.6-10
+  binutils-20080624-2
+  cygport-0.9.6-1
+  gawk-3.1.6-1
+  gcc4-core-4.3.2-2
+  gcc4-g++-4.3.2-2
+  libtool-2.2.7a-12
+  make-3.81-2
   sed-4.1.5-2
 
 Canonical website:
@@ -43,7 +44,6 @@ Build instructions:
 
 This will create:
   /usr/src/ilmbase-1.0.1-X-src.tar.bz2
-  /usr/src/ilmbase-1.0.1-X.tar.bz2
   /usr/src/libilmbase-devel-1.0.1-X.tar.bz2
   /usr/src/libilmbase6-1.0.1-X.tar.bz2
 
@@ -51,21 +51,17 @@ This will create:
 
 Files included in the binary packages:
 
-(ilmbase)
-  /usr/share/doc/Cygwin/ilmbase-1.0.1.README
-  /usr/share/doc/ilmbase-1.0.1/AUTHORS
-  /usr/share/doc/ilmbase-1.0.1/COPYING
-  /usr/share/doc/ilmbase-1.0.1/ChangeLog
-  /usr/share/doc/ilmbase-1.0.1/INSTALL
-  /usr/share/doc/ilmbase-1.0.1/LICENSE
-  /usr/share/doc/ilmbase-1.0.1/NEWS
-  /usr/share/doc/ilmbase-1.0.1/README
-
 (libilmbase6)
   /usr/bin/cygHalf-6.dll
   /usr/bin/cygIex-6.dll
   /usr/bin/cygIlmThread-6.dll
   /usr/bin/cygImath-6.dll
+  /usr/share/doc/ilmbase/AUTHORS
+  /usr/share/doc/ilmbase/COPYING
+  /usr/share/doc/ilmbase/ChangeLog
+  /usr/share/doc/ilmbase/LICENSE
+  /usr/share/doc/ilmbase/NEWS
+  /usr/share/doc/ilmbase/README
 
 (libilmbase-devel)
   /usr/include/OpenEXR/Iex.h
@@ -129,11 +125,8 @@ Files included in the binary packages:
 
 Port Notes:
 
------ version 1.0.1-1 -----
-Version bump.
-
------ version 1.0.0-1 -----
-Initial release for Cygwin (broken out upstream from OpenEXR).
+----- version 1.0.1-10 -----
+Initial release for Cygwin 1.7.
 
 
 Cygwin port maintained by:

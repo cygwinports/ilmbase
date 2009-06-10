@@ -1,13 +1,11 @@
 DESCRIPTION="OpenEXR utility libraries"
 HOMEPAGE="http://www.openexr.com/"
 SRC_URI="http://download.savannah.nongnu.org/releases/openexr/${P}.tar.gz"
+PATCH_URI="1.0.1-exeext.patch"
 
-abi=6
-PKG_NAMES="${PN} lib${PN}${abi} lib${PN}-devel"
-PKG_HINTS="setup lib devel"
-PKG_CONTENTS[0]='usr/share/'
-PKG_CONTENTS[1]="usr/bin/*-${abi}.dll"
-PKG_CONTENTS[2]='usr/include/ usr/lib/'
+PKG_NAMES="${PN} lib${PN}6 lib${PN}-devel"
+libilmbase6_CONTENTS="usr/bin/*-6.dll usr/share/doc/"
+libilmbase_devel_CONTENTS='usr/include/ usr/lib/'
 
 DIFF_EXCLUDES="IlmBaseConfig.h"
 

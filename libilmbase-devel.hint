@@ -1,5 +1,5 @@
 category: Libs
-requires: cygwin libilmbase6
+requires: cygwin libilmbase6 libstdc++6-devel
 external-source: ilmbase
 sdesc: "Utility libraries used by OpenEXR (development)"
 ldesc: "General utility libraries used by OpenEXR:
