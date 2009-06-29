@@ -1,5 +1,5 @@
 category: Libs
-requires: cygwin libgcc1 libstdc++6
+requires: libgcc1 libstdc++6
 sdesc: "Utility libraries used by OpenEXR (runtime)"
 ldesc: "General utility libraries used by OpenEXR:
 * Half is a class that encapsulates our 16-bit floating-point format.
