@@ -1,6 +1,6 @@
 DESCRIPTION="OpenEXR utility libraries"
-HOMEPAGE="http://www.openexr.com/"
-SRC_URI="http://download.savannah.nongnu.org/releases/openexr/${P}.tar.gz"
+HOMEPAGE="http://openexr.com/"
+SRC_URI="mirror://savannah/openexr/${P}.tar.gz"
 PATCH_URI="1.0.1-exeext.patch"
 
 PKG_NAMES="${PN} lib${PN}6 lib${PN}-devel"
