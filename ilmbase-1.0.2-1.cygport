@@ -1,10 +1,13 @@
 DESCRIPTION="OpenEXR utility libraries"
 HOMEPAGE="http://openexr.com/"
 SRC_URI="mirror://savannah/openexr/${P}.tar.gz"
-PATCH_URI="1.0.1-exeext.patch"
 
-PKG_NAMES="${PN} lib${PN}6 lib${PN}-devel"
-libilmbase6_CONTENTS="usr/bin/*-6.dll usr/share/doc/"
+PATCH_URI="1.0.1-exeext.patch
+           1.0.2-gcc45.patch"
+
+PKG_NAMES="lib${PN}6 lib${PN}-common lib${PN}-devel"
+libilmbase6_CONTENTS="usr/bin/*-6.dll"
+libilmbase_common_CONTENTS="usr/share/doc/"
 libilmbase_devel_CONTENTS='usr/include/ usr/lib/'
 
 DIFF_EXCLUDES="IlmBaseConfig.h"

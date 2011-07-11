@@ -1,7 +1,7 @@
 category: Libs
-requires: libgcc1 libstdc++6 libilmbase-common
+requires:
 external-source: ilmbase
-sdesc: "Utility libraries used by OpenEXR (runtime)"
+sdesc: "Utility libraries used by OpenEXR (docs)"
 ldesc: "General utility libraries used by OpenEXR:
 * Half is a class that encapsulates our 16-bit floating-point format.
 * IlmThread is a thread abstraction library for use with OpenEXR
