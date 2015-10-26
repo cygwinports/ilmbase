@@ -1,5 +1,5 @@
 NAME="ilmbase"
-VERSION=1.0.3
+VERSION=2.2.0
 RELEASE=1
 CATEGORY="Libs"
 SUMMARY="Utility libraries used by OpenEXR"
@@ -12,17 +12,20 @@ Windows threads.
 and other useful 2D and 3D math functions.
 * Iex is an exception-handling library."
 HOMEPAGE="http://openexr.com/"
-SRC_URI="https://github.com/downloads/openexr/openexr/ilmbase-${VERSION}.tar.gz"
-
+SRC_URI="mirror://savannah/openexr/ilmbase-${VERSION}.tar.gz"
 PATCH_URI="
 	1.0.1-exeext.patch
 "
 
-PKG_NAMES="lib${NAME}7 lib${NAME}-common lib${NAME}-devel"
-libilmbase7_CONTENTS="usr/bin/*-7.dll"
+PKG_NAMES="lib${NAME}12 lib${NAME}-common lib${NAME}-devel"
+libilmbase12_CONTENTS="usr/bin/*-12.dll"
 libilmbase_common_CONTENTS="usr/share/doc/"
 libilmbase_devel_CONTENTS='usr/include/ usr/lib/'
 
 DIFF_EXCLUDES="IlmBaseConfig.h"
 
 NO_AUTOHEADER=1
+CYGCONF_ARGS="
+	--disable-namespaceversioning
+	ac_cv_header_ucontext_h=no
+"
